@@ -9,12 +9,42 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.tryvic.Main3Activity"
-    tools:showIn="@layout/activity_main3">
+    tools:context="com.example.tryvic.Main3Activity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="66666666666"/>
+        android:text="66666666666"
+        android:id="@+id/b_t"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_t"
+        android:layout_below="@+id/b_t"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="79dp"
+        android:hint="driver&apos;s name/car&apos;s number/district/order" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/search_b"
+        android:layout_below="@+id/search_t"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brocast"
+        android:id="@+id/brocast_b"
+        android:layout_below="@+id/search_b"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp" />
+
 
 </RelativeLayout>
